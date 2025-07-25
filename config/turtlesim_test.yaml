@@ -1,0 +1,48 @@
+# ROS2 Launch Tester Configuration Example for multisim.launch.py
+# Specify what to expect from your launch file
+
+# List of nodes that should be running
+# multisim.launch.py launches two turtlesim nodes with specific names
+nodes:
+  - "/turtlesim1turtlesim"
+  - "/turtlesim2turtlesim"
+
+# List of topics that should exist
+# Topics are namespaced under the turtle nodes
+topics:
+  - "/turtlesim1/turtle1/cmd_vel"
+  - "/turtlesim1/turtle1/pose"
+  - "/turtlesim2/turtle1/cmd_vel"
+  - "/turtlesim2/turtle1/pose"
+  - "/parameter_events" # Common ROS2 topic
+  - "/rosout" # Common ROS2 topic
+
+# List of services that should be available
+# Services are namespaced under the turtle nodes
+services:
+  - "/turtlesim1/turtle1/set_pen"
+  - "/turtlesim1/turtle1/teleport_absolute"
+  - "/turtlesim1/turtle1/teleport_relative"
+  - "/turtlesim1/clear"
+  - "/turtlesim1/kill"
+  - "/turtlesim1/reset"
+  - "/turtlesim1/spawn"
+  - "/turtlesim2/turtle1/set_pen"
+  - "/turtlesim2/turtle1/teleport_absolute"
+  - "/turtlesim2/turtle1/teleport_relative"
+  - "/turtlesim2/clear"
+  - "/turtlesim2/kill"
+  - "/turtlesim2/reset"
+  - "/turtlesim2/spawn"
+  # Common ROS2 services for parameter management (from launch_tester node itself)
+  - "/launch_tester/describe_parameters"
+  - "/launch_tester/get_parameters"
+  - "/launch_tester/list_parameters"
+  - "/launch_tester/set_parameters"
+  - "/launch_tester/set_parameters_atomically"
+
+# Optional timeout settings
+timeout:
+  startup: 5.0    # seconds to wait for launch file startup
+  tests: 30.0     # seconds to wait for each test category
+
