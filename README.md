@@ -1,4 +1,4 @@
-<div align="center">
+<div align="left">
   <img src="assets/logo.png" alt="ROS2 Launch Tester" width="300"/>
 </div>
 
