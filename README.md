@@ -61,7 +61,7 @@ The **ROS2 Launch Tester** is a robust tool designed to automatically validate R
     Navigate into the `src` directory of your workspace and clone this repository:
     ```bash
     cd ~/ros2_launch_tester_ws/src
-    git clone https://github.com/TheShaboury/ros2_launch_tester # Replace with your repo URL
+    git clone https://github.com/TheShaboury/ros2_launch_tester
     # Or if you downloaded the files, copy the 'ros2_launch_tester' folder here
     ```
 
