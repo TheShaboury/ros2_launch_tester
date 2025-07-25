@@ -1,8 +1,7 @@
+# ROS2 Launch Tester 🧪
 <div align="left">
   <img src="assets/logo.png" alt="ROS2 Launch Tester" width="300"/>
 </div>
-
-# ROS2 Launch Tester 🧪
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
